@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DependecyServicesXamarin.CustomRenderers"
+             xmlns:effects="clr-namespace:DependecyServicesXamarin.Effects"
+             x:Class="DependecyServicesXamarin.Views.MainPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="{Binding DeviceOrientation}" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Button Text="Get current orientation" Command="{Binding GetOrientationCommand}"/>
+
+            <local:MyEntry Placeholder="My Entry">
+                <local:MyEntry.Effects>
+                    <effects:FocusedEffect />
+                </local:MyEntry.Effects>
+            </local:MyEntry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
