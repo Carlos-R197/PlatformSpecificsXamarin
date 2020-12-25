@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace DependecyServicesXamarin.Effects
 {
-    public class FocusedEffect : RoutingEffect
+    public class FocusEffect : RoutingEffect
     {
-        public FocusedEffect() : base($"MyCompany.{nameof(FocusedEffect)}")
+        public FocusEffect() : base($"MyCompany.{nameof(FocusEffect)}")
         {
         }
     }

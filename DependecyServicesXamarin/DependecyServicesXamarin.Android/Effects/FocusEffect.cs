@@ -17,14 +17,14 @@ namespace DependecyServicesXamarin.Droid.Effects
 {
     public class FocusEffect : PlatformEffect
     {
-        Android.Graphics.Color originalBackgroundColor = new Android.Graphics.Color(72, 109, 219);
+        Android.Graphics.Color originalBackgroundColor = new Android.Graphics.Color(219, 80, 72);
         Android.Graphics.Color backgroundColor;
 
         protected override void OnAttached()
         {
             try
             {
-                backgroundColor = new Android.Graphics.Color(219, 80, 72);
+                backgroundColor = new Android.Graphics.Color(72, 109, 219); 
                 Control.SetBackgroundColor(backgroundColor);
             }
             catch (Exception ex)

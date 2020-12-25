@@ -9,11 +9,14 @@
             <Label Text="{Binding DeviceOrientation}" HorizontalOptions="Center" VerticalOptions="Center" />
             <Button Text="Get current orientation" Command="{Binding GetOrientationCommand}"/>
 
-            <local:MyEntry Placeholder="My Entry">
-                <local:MyEntry.Effects>
-                    <effects:FocusedEffect />
-                </local:MyEntry.Effects>
+            <local:MyEntry Placeholder="My custom entry">
             </local:MyEntry>
+
+            <Entry Placeholder="Entry with effect">
+                <Entry.Effects>
+                    <effects:FocusEffect />
+                </Entry.Effects>
+            </Entry>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
